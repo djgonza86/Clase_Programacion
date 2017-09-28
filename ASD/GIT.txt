@@ -1,0 +1,10 @@
+1- git init
+2- git add -A -------> paso 1 para guardar
+3- git status
+4- git config --global user.email "mimail"
+5- git config --global user.name "Usuario"
+6- git remote add "direccion url"
+7- git push -u origin master ------>paso 2
+8- git clone URL
+9- git pull (baja cambios de la web)
+

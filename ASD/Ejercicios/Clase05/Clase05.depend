@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1504134076 source:d:\asd\ejercicios\clase05\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1504137540 source:d:\asd\ejercicios\clase05\gc.c
+	"GC.h"
+	<stdio.h>
+	<stdlib.h>
+
+1504134909 d:\asd\ejercicios\clase05\gc.h
+

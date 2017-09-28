@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1503530743 source:c:\users\alumno\desktop\clase3\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1503617566 source:d:\asd\ejercicios\clase3\calculadora.c
+	"Calculadora.h"
+
+1503623836 source:d:\asd\ejercicios\clase3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Calculadora.h"
+	"Consola.h"
+
+1503622686 d:\asd\ejercicios\clase3\calculadora.h
+
+1503623179 d:\asd\ejercicios\clase3\consola.c
+	<stdio.h>
+	<stdlib.h>
+
+1503622686 d:\asd\ejercicios\clase3\consola.h
+
+1503623568 source:d:\asd\ejercicios\clase3\consola.c
+	<stdio.h>
+	<stdlib.h>
+
+1503617568 source:e:\asd\ejercicios\clase3\calculadora.c
+	"Calculadora.h"
+
+1503622688 e:\asd\ejercicios\clase3\calculadora.h
+
+1503623570 source:e:\asd\ejercicios\clase3\consola.c
+	<stdio.h>
+	<stdlib.h>
+
+1503623838 source:e:\asd\ejercicios\clase3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Calculadora.h"
+	"Consola.h"
+
+1503622688 e:\asd\ejercicios\clase3\consola.h
+

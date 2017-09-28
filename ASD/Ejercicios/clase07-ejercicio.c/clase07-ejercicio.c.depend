@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1504747626 source:d:\asd\ejercicios\clase07-ejercicio.c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1504909734 source:e:\asd\ejercicios\clase07-ejercicio.c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

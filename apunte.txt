@@ -1,0 +1,32 @@
+informes: 
+
+nos paramos en la posicion i y recorremos el array, creamos un contador y lo guardamos 
+en una variable auxiliar.
+
+
+incrementamos i y seguimos recorriendo el array. creamos un maximo.
+
+////////////////////////////////////////////////////////
+
+estructura de la identidad:
+
+id, 
+flag,
+alta,
+baja,
+modificacion, 
+id autoincrementable(funcion static) ----> static int id = -1;
+
+/////////////////////////////////////////////////////////
+
+validaciones:
+
+nombre,
+email, 
+telefono,
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1504830942 source:c:\users\alumno\desktop\producto.c\funcionesproducto.c
+	<stdio.h>
+	<stdlib.h>
+	"funcionesProducto.h"
+
+1504831044 c:\users\alumno\desktop\producto.c\funcionesproducto.h
+
+1504830950 source:c:\users\alumno\desktop\producto.c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcionesProducto.h"
+

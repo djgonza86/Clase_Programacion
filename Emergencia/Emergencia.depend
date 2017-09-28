@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1505872291 source:c:\users\gonza\desktop\programacion\emergencia\abonado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"abonado.h"
+	"validacion.h"
+
+1505872491 c:\users\gonza\desktop\programacion\emergencia\abonado.h
+
+1505868657 source:c:\users\gonza\desktop\programacion\emergencia\main.c
+	<stdio.h>
+	<stdlib.h>
+	"abonado.h"
+
+1505872269 source:c:\users\gonza\desktop\programacion\emergencia\validacion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1505870448 c:\users\gonza\desktop\programacion\emergencia\validacion.h
+

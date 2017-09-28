@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1505956190 source:c:\users\alumno\desktop\asociado\main.c
+	<stdio.h>
+	<stdlib.h>
+	"asociado.h"
+	"validar.h"
+
+1505955899 source:c:\users\alumno\desktop\asociado\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
+1505955610 source:c:\users\alumno\desktop\asociado\asociado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociado.h"
+	"validar.h"
+
+1505956084 c:\users\alumno\desktop\asociado\asociado.h
+
+1505955356 c:\users\alumno\desktop\asociado\validar.h
+

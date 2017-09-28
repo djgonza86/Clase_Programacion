@@ -1,0 +1,7 @@
+Se incluye en el ".h" los prototipos y los defines.
+
+Nuestras bibliotecas siempre van con comillas (").
+
+
+Funciones privadas: "static" palabra reservada para usar funciones solamente en un mismo archivo, siempre declarar su prototipo.
+

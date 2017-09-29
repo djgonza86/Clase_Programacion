@@ -116,7 +116,7 @@ int prod_buscarPorId(sProducto* arrayProducto, int longitud, int id)
         {
             if(arrayProducto[i].estado == PRODUCTO_OCUPADO)
             {
-                if(arrayProducto[i].Id==id);
+                if(id == arrayProducto[i].Id);
                 {
                     retorno = i;
                     break;

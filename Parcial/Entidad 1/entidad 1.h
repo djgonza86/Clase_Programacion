@@ -9,11 +9,14 @@ typedef struct
     int flagEstadoOcupado;
     char a[CANTIDAD_CHAR];
     int b;
-}sEntidad1;
+} sEntidad1;
 
 #endif // ENTIDAD_1_H_INCLUDED
 
-int ent1_init(sEntidad1 array[], int len);
-int ent1_alta(sEntidad1 array[], int len);
-int ent1_modificar (sEntidad1 array, int len, int id);
-int ent1_baja(sEntidad1 array[],int len, int id);
+int ent1_init(sEntidad1* array, int len);
+int ent1_alta(sEntidad1* array, int len);
+int ent1_modificar (sEntidad1* array, int len, int id);
+int ent1_baja(sEntidad1* array,int len, int id);
+int ent1_buscarIndicePorDni(sEntidad1* array, int len, char dni[]);
+int ent1_buscarIndicePorId(sEntidad1* array, int len, int id);
+

@@ -1,13 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "validacion.h"
+#include "validar.h"
+
 #define MAX_INPUT_BUFFER 4096
 
-void myFgets(char* buffer, int limite,FILE* archivo)
+// Funciones privadas
+static void myFgets(char* buffer, int limite ,FILE* archivo);
+//___________________
+
+
+static void myFgets(char* buffer, int limite ,FILE* archivo)
 {
     int i=0;
-    fgets(buffer, limite,archivo);
+    fgets(buffer, limite ,archivo);
     buffer[limite-1] = '\0';
     while(buffer[i] != '\0')
     {
@@ -28,9 +34,10 @@ int val_getNombre(char* destino, char* mensaje,char* mensajeError,int intentos,i
     if(destino != NULL && limite > 0 && limite < MAX_INPUT_BUFFER)
     {
         printf(mensaje);
-        for( ; intentos>0; intentos--)
+        for( ;intentos>0;intentos--)
         {
-            myFgets(buffer, limite,stdin);
+
+            myFgets(buffer, limite ,stdin);
 
             if(val_validarNombre(buffer) == -1)
             {
@@ -43,10 +50,17 @@ int val_getNombre(char* destino, char* mensaje,char* mensajeError,int intentos,i
                 retorno = 0;
                 break;
             }
+
+
         }
+
+
+
     }
     return retorno;
 }
+
+
 
 int val_getFloat(char* destino, char* mensaje,char* mensajeError,int intentos,int limite)
 {
@@ -56,10 +70,10 @@ int val_getFloat(char* destino, char* mensaje,char* mensajeError,int intentos,in
     if(destino != NULL && limite > 0 && limite < MAX_INPUT_BUFFER)
     {
         printf(mensaje);
-        for( ; intentos>0; intentos--)
+        for( ;intentos>0;intentos--)
         {
 
-            myFgets(buffer, limite,stdin);
+            myFgets(buffer, limite ,stdin);
 
             if(val_validarFloat(buffer) == -1)
             {
@@ -77,13 +91,14 @@ int val_getFloat(char* destino, char* mensaje,char* mensajeError,int intentos,in
     return retorno;
 }
 
+
 int val_validarNombre(char* buffer)
 {
     int i=0;
     int retorno = 0;
     while(buffer[i] != '\0')
     {
-        if((buffer[i] < 'a' || buffer[i] > 'z') && (buffer[i] < 'A' || buffer[i] > 'Z' ))
+        if(buffer[i] < 'a' || buffer[i] > 'z')
         {
             retorno = -1;
             break;
@@ -127,6 +142,15 @@ int val_validarFloat(char* buffer)
     return retorno;
 }
 
+
+
+
+
+
+
+
+
+
 int val_getUnsignedInt(char* destino, char* mensaje,char* mensajeError,int intentos,int limite)
 {
     int retorno = -1;
@@ -135,10 +159,10 @@ int val_getUnsignedInt(char* destino, char* mensaje,char* mensajeError,int inten
     if(destino != NULL && limite > 0 && limite < MAX_INPUT_BUFFER)
     {
         printf(mensaje);
-        for( ; intentos>0; intentos--)
+        for( ;intentos>0;intentos--)
         {
 
-            myFgets(buffer, limite,stdin);
+            myFgets(buffer, limite ,stdin);
 
             if(val_validarUnsignedInt(buffer) == -1)
             {
@@ -155,6 +179,9 @@ int val_getUnsignedInt(char* destino, char* mensaje,char* mensajeError,int inten
     }
     return retorno;
 }
+
+
+
 
 int val_validarUnsignedInt(char* buffer)
 {
@@ -184,50 +211,6 @@ int val_validarUnsignedInt(char* buffer)
                     break;
                 }
             }
-        }
-        i++;
-    }
-    return retorno;
-}
-
-int val_getDesc(char* destino, char* mensaje,char* mensajeError,int intentos,int limite)
-{
-    int retorno = -1;
-    char buffer[MAX_INPUT_BUFFER];
-
-    if(destino != NULL && limite > 0 && limite < MAX_INPUT_BUFFER)
-    {
-        printf(mensaje);
-        for( ; intentos>0; intentos--)
-        {
-            myFgets(buffer, limite,stdin);
-
-            if(val_validarDesc(buffer) == -1)
-            {
-                printf(mensajeError);
-                continue;
-            }
-            else
-            {
-                strncpy(destino,buffer,limite);
-                retorno = 0;
-                break;
-            }
-        }
-    }
-    return retorno;
-}
-
-int val_validarDesc(char* buffer)
-{
-    int i=0;
-    int retorno = 0;
-    while(buffer[i] != '\0')
-    {
-        if((buffer[i] < 'a' || buffer[i] > 'z' ) && buffer[i] != 32 && (buffer[i] < 'A' || buffer[i] > 'Z' ))
-        {
-            retorno = -1;
-            break;
         }
         i++;
     }

@@ -1,0 +1,11 @@
+2 estructuras
+1 de cliente y otra de maquinas
+ 
+
+una tercera estructura se relaciona entre ellos dos (id cliente, id maquina, dias):
+-realizar el alta, baja y modificacion
+-estado de alquiler
+-flag de estado
+
+
+

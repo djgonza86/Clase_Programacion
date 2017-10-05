@@ -18,8 +18,8 @@ int main()
     while(1)
     {
         printf("1-OPCION 1");
-        printf("1-OPCION 2");
-        printf("1-OPCION 3");
+        printf("2-OPCION 2");
+        printf("3-OPCION 3");
 
         char opcion [50];
         if(val_getUnsignedInt(opcion,"Elija: ","ERROR",3,50)== 0)

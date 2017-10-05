@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "entidad 1.h"
 #include "entidad 2.h"
 #include "informes.h"
 
-void imprimirTodo(sEntidad1 arrayEntidad1[], int lenEntidad1, sEntidad2 arrayEntidad2[], int lenEntidad2)
+void imprimirTodo(sEntidad1* arrayEntidad1, int lenEntidad1, sEntidad2* arrayEntidad2, int lenEntidad2)
 {
     int indiceE2;
     int i;
@@ -55,5 +56,6 @@ void ordenarPorInsercion(sEntidad1* array, int len)
         }
     }
 }
+
 
 
